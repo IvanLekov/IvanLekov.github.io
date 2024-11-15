@@ -1,0 +1,158 @@
+body{
+    padding:0;
+    margin:0;
+    font-family: 'Questrial', sans-serif;
+    background-color: #dbd6d6;
+}
+.container{
+   padding-left:15px;
+   padding-right: 15px;
+   width: 1150px;
+   margin-left: auto;
+   margin-right: auto;
+   position: relative;
+}
+@media (max-width:1400) {
+    .container {
+        width: 1000px;
+    }
+    .navbar {
+        width: 1000px;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 800px;
+        
+    }
+
+    .navbar {
+       width: 800px;
+    }
+  }
+  @media (max-width: 1000px) {
+    .container {
+        width: 600px;
+    }
+    .navbar {
+       width: 600px
+    }
+  }
+.navbar{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 60%;
+    position: static;
+}
+.logo{
+    font-size:25px;
+    margin-top:10px;
+    margin-bottom: 0px; 
+}
+#logo{
+    margin:0;
+    white-space: nowrap;
+}
+.navbar-right{
+margin-left: auto;
+margin-top:10px;
+}
+.unordered-list-1{
+    list-style-type: none;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.list_1
+{
+    font-size: large;
+    margin: 10px;
+    padding-left: 25px;
+    white-space: nowrap;
+    
+}
+.resume{
+    margin: 20px;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+.resume-header{
+    
+    padding:50px 50px 0px 50px;
+    margin: 0px 15px 0px 15px;
+    background-color:orange;
+    border-radius: 20px 20px 0px 0px;
+    display:flex;
+    gap: 5%;
+}
+.image{
+    width: 33.33333%;
+    height :379px;
+    border: 4px solid;
+    border-color:#ffffff;
+
+}
+#image{
+    width: 100%;
+    height: 100%;
+}
+.my-info{
+    padding: 0px 15px 0px 15px;
+    display: block;
+    margin-left: auto;;
+    width: 66.666%;
+    height :160px;
+    white-space: nowrap; 
+    text-align: center;
+}
+#my-name{
+    margin:0;
+    font-size:300%;
+    color: #ffffff;
+}
+#status{
+    margin:10px 0px 10px 0px;
+    font-size:100%;
+    color: #ffffff;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+}
+.unordered-list-2{
+    display: flex;
+    padding:0;
+}
+.list_2{
+list-style: none;
+display: flex;
+margin-right: 20px;
+font-size: 35px;
+color:#ffffff;
+border: 3px solid;
+border-radius: 50px;
+}
+
+
+
+
+
+
+.resumeheader-left{
+   
+}
+.resumeheader-middle{
+    
+}
+.resumeheader-right{
+    
+}
+
+
+.resume-body{
+    display: flex;
+}
+section{
+    display: flex;
+}
