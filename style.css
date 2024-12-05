@@ -11,37 +11,10 @@ body{
    margin-left: auto;
    margin-right: auto;
    position: relative;
-}
-@media (max-width:1400) {
-    .container {
-        width: 1000px;
-    }
-    .navbar {
-        width: 1000px;
-    }
-}
-@media (max-width: 1200px) {
-    .container {
-        width: 800px;
-        
-    }
-
-    .navbar {
-       width: 800px;
-    }
-  }
-  @media (max-width: 1000px) {
-    .container {
-        width: 600px;
-    }
-    .navbar {
-       width: 600px
-    }
   }
 .navbar{
     display: grid;
     grid-template-columns: auto auto;
-    gap: 60%;
     position: static;
 }
 .logo{
@@ -49,110 +22,480 @@ body{
     margin-top:10px;
     margin-bottom: 0px; 
 }
+.logo a{
+    color: #49515d;
+    text-decoration: none;
+}
 #logo{
+    color: orange;
+}
+.logo a:active{
+    color: orange;
+}
+.logo a:visited{
+    color: #49515d;
+}
+.logo a:hover{
+    color: orange;
+}
+.logo p{
     margin:0;
     white-space: nowrap;
 }
 .navbar-right{
-margin-left: auto;
-margin-top:10px;
+    margin-left: auto;
+    margin-top:10px;
 }
-.unordered-list-1{
+.navbar-right ul{
+    
     list-style-type: none;
     margin: 0;
     display: grid;
     grid-template-columns: auto auto;
 }
-.list_1
-{
+.navbar-right ul li{
     font-size: large;
     margin: 10px;
     padding-left: 25px;
     white-space: nowrap;
-    
+}
+.navbar-right ul li a{
+   color: #49515d;
+   text-decoration: none;
+}
+.navbar-right ul li a:active{
+    color: orange;
+ }
+ .navbar-right ul li a:visited{
+    color: #49515d;
+}
+.navbar-right ul li a:hover{
+    color: orange;
 }
 .resume{
     margin: 20px;
-    background-color: white;
-    margin: 0;
+    margin: 15px;
     padding: 0;
 }
 .resume-header{
-    
+    width: auto;
+    height: 360px;
     padding:50px 50px 0px 50px;
     margin: 0px 15px 0px 15px;
     background-color:orange;
     border-radius: 20px 20px 0px 0px;
     display:flex;
-    gap: 5%;
 }
 .image{
     width: 33.33333%;
-    height :379px;
-    border: 4px solid;
+    height: auto;
+    border: 3px solid;
     border-color:#ffffff;
-
-}
-#image{
-    width: 100%;
-    height: 100%;
 }
 .my-info{
     padding: 0px 15px 0px 15px;
     display: block;
     margin-left: auto;;
     width: 66.666%;
-    height :160px;
+    height: auto;
     white-space: nowrap; 
     text-align: center;
 }
-#my-name{
+
+.my-info h2{
     margin:0;
     font-size:300%;
     color: #ffffff;
+    
 }
-#status{
+.my-info h3{
     margin:10px 0px 10px 0px;
-    font-size:100%;
+    font-size:140%;
     color: #ffffff;
 }
 .socials{
     display: flex;
     justify-content: center;
 }
-.unordered-list-2{
+.socials ul{
     display: flex;
     padding:0;
 }
-.list_2{
-list-style: none;
-display: flex;
-margin-right: 20px;
-font-size: 35px;
-color:#ffffff;
-border: 3px solid;
-border-radius: 50px;
+.socials ul li{
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+    font-size: 35px;
+    color:#ffffff;
+    border: 3px solid;
+    border-radius: 50px;
 }
-
-
-
-
-
-
-.resumeheader-left{
-   
+.socials ul li a{
+    text-decoration: none;
+    margin:0;
+    padding:0;
+    width: 35px;
+    height: 35px;
 }
-.resumeheader-middle{
-    
+.image img{
+    width: 100%;
+    height: 100%;
 }
-.resumeheader-right{
-    
+.socials ul li a:active{
+    color:#ffffff;
 }
-
-
+.socials ul li a:visited{
+    color:#ffffff;
+}
+.socials ul li a:hover{
+    color: #49515d;
+}
 .resume-body{
-    display: flex;
+    background-color: white;
+    height: auto;
+    padding:50px 50px 0px 50px;
+    margin: 0px 15px 0px 15px;
+    border-radius: 0px 0px 20px 20px;
 }
-section{
-    display: flex;
+.duration-box{
+    background-color: orange;
+    color:#ffffff;
+    padding: 1px 3px 1px 3px;
+    border-radius: 20px;
+    height: min-content;
+    margin-left: auto;
 }
+.duration-box p{
+    padding: 0;
+    white-space: nowrap;
+}
+
+.about-me{
+    display: grid;
+    grid-template-columns: 33% auto ;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px 50px 0px;
+}
+.about-me-title{
+    padding-left:37%;
+    margin: 0;
+    white-space: nowrap; 
+    font-size: larger;
+}
+.about-me-content
+{
+    padding-left: 10%;
+}
+.contact-details{
+    display: grid;
+    grid-template-columns: 33% 1% 1%;
+    height: auto;
+    padding: 50px 0px 50px 0px;
+}
+.contact-details-title{
+    padding-left:22%;
+    margin: 0;
+    font-size: larger;
+    }
+.personal-info{
+    display: flex;
+    padding-left: 20%;
+}
+.personal-info ul{
+    list-style: none;
+    white-space: nowrap; 
+    margin: 0;
+    padding: 0;
+}
+.personal-info ul li{
+    margin: 0px 0px 10px 0px;
+}
+.title{
+  font-weight: bold;
+}
+.value{
+    padding-left: 50%;
+    }
+.education{
+    display: grid;
+    grid-template-columns: 33% auto;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px 50px 0px;
+}
+.education-title{
+    padding-left:15%;
+    margin: 0;
+    font-size: larger;
+    display: inline;
+}
+.university{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 30px;
+}
+.highschool{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 30px;
+}
+.work-experience{
+    display: grid;
+    grid-template-columns: 33% auto;
+    width: 100%;
+    height: auto;
+    padding: 50px 0px 50px 0px;
+}
+.work-experience-title{
+    padding-left:7%;
+    margin: 0;
+    font-size: larger;
+    display: inline;
+}
+.about-job{
+    margin: 0;
+    padding: 0;
+}
+.work-exp-one{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 30px;
+}
+.work-exp-one ul li::marker{
+    color: orange;
+
+}
+.work-exp-one ul li{
+    margin-bottom:10px;
+}
+
+.work-exp-two{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 30px;
+}
+.work-exp-two ul li::marker{
+    color: orange;
+}
+.work-exp-two ul li{
+    margin-bottom:10px;
+}
+@media(max-width: 590px)  {/*PHONE*/
+    .navbar-right ul li{
+        padding: 0px;
+    }
+    .navbar-right ul li a{
+        padding: 0px;
+    }
+    .navbar-right ul{   
+        padding: 0px;
+    }
+    .navbar-right ul li{
+        padding: 0px;
+    }
+    .navbar-right ul li a:visited{
+        color:white;
+    }
+    .navbar-right ul li a:hover{
+       color:white;
+    }
+    .resume-body{  
+        font-size: 90%;
+    }
+    .about-me{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me-title{
+        padding-bottom:5%;
+    }
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-details-title h3{
+        padding-bottom:5%;
+    }
+    .value{
+        padding-left: 20%;
+        }
+    .duration-box{
+        font-size: smaller;
+    }
+    .education{
+        display: flex;
+        flex-direction: column;
+    }
+    .education-title h3{
+        padding-bottom:5%;
+    }
+    .work-experience{
+        display: flex;
+        flex-direction: column;
+    }
+    .work-experience-title h3{
+        padding-bottom:5%;
+    }
+}
+ @media(max-width: 768px)  {/*TABLET*/
+    .container{
+        width: 100%;
+        padding: 0;
+       }
+    .navbar{
+        background-color: orange;
+        padding-top: 5px;
+    }
+    #logo{
+        color: white;
+    }
+    .logo p{
+        padding-left: 10px;
+        color: white;
+        margin-bottom: 6px;
+    }
+    .navbar-right{
+        margin-top:auto;
+    }
+    .navbar-right ul{
+        color: white;
+    }
+    .navbar-right ul li{
+        color: white;
+    }
+    .navbar-right ul li a{
+        color: white;
+    }
+     .navbar-right ul li a:visited{
+        color: white;
+    }
+    .resume-header{
+        padding:20px 40px 20px 40px;
+        margin: 0;
+        height:500px;
+        align-items: center;
+        box-sizing: border-box; 
+        flex-direction: column;
+    }
+    .image {
+        width: 80%;
+        max-width: 300px;
+        aspect-ratio: 3 / 4; 
+        max-height: 300px; 
+    }
+    .my-info{
+        margin: 0;
+        
+    }
+    .my-info h2{
+        font-size:150%;
+        white-space: wrap;
+    }
+    .my-info h3{
+        margin:5px 0px 0px 0px;
+        font-size:100%;
+    }
+    .socials ul li{
+        margin-right: 10px;
+        font-size: 25px;
+    }
+    .socials ul li a{
+        width: 25px;
+        height: 25px;
+        
+    }
+    .resume-body{
+        padding:0px 10px 0px 10px;
+        margin: 0px;
+    }
+    .about-me-title{
+        padding-left:0px;
+    }
+    .contact-details-title{
+        padding: 0;
+    }
+    .education-title{
+        padding: 0;
+    }
+    .work-experience-title{
+        padding: 0;
+    }
+}
+@media(min-width: 769px)  {/*N3 */
+    .container{
+     width: 720px;
+    }
+    .resume-header{
+        height: 190px;
+    }
+    .my-info h2{
+        font-size:200%;
+    }
+    .my-info h3{
+        font-size:100%;
+    }
+    .socials ul li{
+        margin-right: 12px;
+        font-size: 30px;
+    }
+    .socials ul li a{
+        width: 30px;
+        height: 30px;
+    }
+    .duration-box p{
+        font-size: small;
+    }
+}
+@media(min-width: 992px)  {/*N2 */
+    .container{
+     width: 922px; 
+    }
+    .resume-header{
+        height: 278px;
+    }
+    .my-info h2{
+        font-size:250%;
+    }
+    .my-info h3{
+        font-size:120%;
+    }
+    .socials ul li{
+        margin-right: 15px;
+        font-size: 32px;
+    }
+    .socials ul li a{
+        width: 32px;
+        height: 32px;
+    }
+    .duration-box p{
+        font-size: smaller;
+    }
+    
+}
+@media(min-width: 1200px)  {/*ORIGINAL */
+    .container{
+        width: 1150px; 
+       }
+       .resume-header{
+           height: 360px;
+       }
+       .my-info h2{
+           font-size:300%;
+       }
+       .my-info h3{
+           font-size:140%;
+       }
+       .socials ul li{
+           margin-right: 20px;
+           font-size: 35px;
+       }
+       .socials ul li a{
+           width: 35px;
+           height: 35px;
+       }
+       .duration-box p{
+           font-size: medium;
+       }
+}
+/*<600px, 601px, 768px, 992px, 1200px*/
