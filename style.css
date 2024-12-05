@@ -189,7 +189,7 @@ body{
 }
 .contact-details{
     display: grid;
-    grid-template-columns: 33% 1% 1%;
+    grid-template-columns: 33% auto ;
     height: auto;
     padding: 50px 0px 50px 0px;
 }
@@ -200,7 +200,7 @@ body{
     }
 .personal-info{
     display: flex;
-    padding-left: 20%;
+    padding-left:10%;
 }
 .personal-info ul{
     list-style: none;
@@ -225,10 +225,13 @@ body{
     padding: 50px 0px 50px 0px;
 }
 .education-title{
-    padding-left:15%;
+    padding-left:32%;
     margin: 0;
     font-size: larger;
     display: inline;
+}
+.edu-box{
+    padding-left:10%;
 }
 .university{
     display: grid;
@@ -248,7 +251,7 @@ body{
     padding: 50px 0px 50px 0px;
 }
 .work-experience-title{
-    padding-left:7%;
+    padding-left:20%;
     margin: 0;
     font-size: larger;
     display: inline;
@@ -256,6 +259,7 @@ body{
 .about-job{
     margin: 0;
     padding: 0;
+    padding-left:10%;
 }
 .work-exp-one{
     display: grid;
@@ -269,7 +273,6 @@ body{
 .work-exp-one ul li{
     margin-bottom:10px;
 }
-
 .work-exp-two{
     display: grid;
     grid-template-columns: auto auto;
@@ -313,6 +316,9 @@ body{
     .contact-details{
         display: flex;
         flex-direction: column;
+    }
+    .personal-info{
+        padding-left: 10%;
     }
     .contact-details-title h3{
         padding-bottom:5%;
@@ -403,7 +409,8 @@ body{
     .socials ul li a{
         width: 25px;
         height: 25px;
-        
+        text-decoration: none;
+        color: white;
     }
     .resume-body{
         padding:0px 10px 0px 10px;
